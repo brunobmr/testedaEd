@@ -787,7 +787,9 @@ figcaption {
 }
 
 .text-size-medium.text-color-black.padding {
+  padding-right: 20px;
   padding-bottom: 20px;
+  padding-left: 20px;
 }
 
 .icon-small {
@@ -2829,11 +2831,8 @@ figcaption {
   position: sticky;
   top: 0px;
   z-index: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 48rem;
+  display: block;
+  max-width: 200rem;
   min-height: 80vh;
   margin-right: auto;
   margin-left: auto;
@@ -4108,7 +4107,13 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  grid-column-gap: 54px;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  grid-column-gap: 100px;
+  grid-row-gap: 100px;
 }
 
 .div-block-2 {
@@ -4118,10 +4123,12 @@ figcaption {
 
 .circle-end {
   display: block;
-  width: 35vh;
-  height: 35vh;
-  padding-top: 98px;
-  border-radius: 300px;
+  width: auto;
+  height: 100%;
+  min-height: 28px;
+  min-width: 18vw;
+  padding: 20px;
+  border-radius: 20px;
   background-color: #fac917;
   text-align: center;
 }
@@ -4623,6 +4630,16 @@ figcaption {
 
   .faq-intro {
     padding-bottom: 3.5rem;
+  }
+
+  .colunas-op-es {
+    display: block;
+  }
+
+  .circle-end {
+    width: auto;
+    height: 100%;
+    min-width: 20vw;
   }
 }
 
@@ -5212,6 +5229,14 @@ figcaption {
   .faq-intro {
     padding-bottom: 2.5rem;
   }
+
+  .colunas-op-es {
+    display: block;
+  }
+
+  .circle-end {
+    margin-bottom: 25px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -5298,6 +5323,16 @@ figcaption {
   .max-width-full-mobile-portrait {
     width: 100%;
     max-width: none;
+  }
+
+  .text-size-medium {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .text-size-medium.text-color-black {
+    padding-right: 0px;
+    padding-left: 0px;
   }
 
   .button-row-grid.mobile-1-col {
@@ -5549,6 +5584,15 @@ figcaption {
 
   .faq-intro {
     padding-bottom: 2.5rem;
+  }
+
+  .circle-end {
+    margin-bottom: 20px;
+  }
+
+  .heading-2 {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
